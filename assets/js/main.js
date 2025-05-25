@@ -69,15 +69,6 @@
 65. Service 7 Animation
 ****************************************************/
 
-
-$(window).on("load", function () {
-  // Optional: Add delay before hiding
-  setTimeout(function () {
-    $(".sabit-loader").fadeOut(500); // Fades out in 0.5s
-  }, 2000); // Wait 2 seconds
-});
-
-
 (function ($) {
   "use strict";
 
@@ -87,7 +78,7 @@ $(window).on("load", function () {
   /////////////////////////////////////////////////////
   // 00. Preloader
   $(document).ready(function () {
-    $('.preloader').hide();
+    $(".sabit-loader").hide();
   });
   /////////////////////////////////////////////////////
 

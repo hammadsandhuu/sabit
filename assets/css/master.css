@@ -125,7 +125,14 @@ html, body {
   stroke-dashoffset: 500;
   animation: drawText 3s ease-in-out infinite;
 }
+.sabit-loader {
+  transition: opacity 0.5s ease;
+}
 
+.sabit-loader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
 @keyframes drawText {
   0% {
     stroke-dashoffset: 500;
