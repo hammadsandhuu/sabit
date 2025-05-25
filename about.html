@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from wealcoder.com/dev/html/axtra/about-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 May 2025 20:05:14 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Axtra HTML5 Template" />
+
+    <title>About - Axtra</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/progressbar.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="dark">
+    <!-- Cursor Animation -->
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+    <!-- Preloader -->
+
+    <!-- Preloader -->
+    <div class="sabit-loader">
+      <svg viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sabit-gradient" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#0369a1" />
+            <stop offset="100%" stop-color="#67e8f9" />
+          </linearGradient>
+        </defs>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+              stroke="url(#sabit-gradient)"
+              stroke-width="2"
+              fill="none"
+              font-size="60"
+              font-family="Arial, sans-serif"
+              class="sabit-text">
+          SABIT
+        </text>
+      </svg>
+    </div>
+
+    <!-- Switcher Area Start -->
+    <div class="switcher__area">
+      <div class="switcher__icon">
+        <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+        <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="switcher__items">
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">Cursor</h2>
+          </div>
+          <div class="switcher__btn">
+            <select name="cursor-style" id="cursor_style">
+              <option value="1">default</option>
+              <option selected value="2">animated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">mode</h2>
+          </div>
+          <div class="switcher__btn mode-type wc-col-2">
+            <button data-mode="light">light</button>
+            <button class="active" data-mode="dark">dark</button>
+          </div>
+        </div>
+
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">Language Support</h2>
+          </div>
+          <div class="switcher__btn lang_dir wc-col-2">
+            <button class="active" data-mode="ltr">LTR</button>
+            <button data-mode="rtl">RTL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Switcher Area End -->
+
+    <!-- Scroll Smoother -->
+    <div class="has-smooth" id="has_smooth"></div>
+
+    <!-- Go Top Button -->
+    <button id="scroll_top" class="scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Header area start -->
+    <header class="header__area">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html">
+            <img
+              class="logo-primary"
+              src="assets/imgs/logo-rotate.png"
+              alt="Site Logo"
+            />
+            <img
+              class="logo-secondary"
+              src="assets/imgs/logo1.png"
+              alt="Moibile Logo"
+            />
+          </a>
+        </div>
+        <div class="header__nav-icon">
+          <button id="open_offcanvas">
+            <img src="assets/imgs/icon/menu-white.png" alt="Menubar Icon" />
+          </button>
+        </div>
+        <div class="header__support">
+          <p>Support center <a href="tel:+9587325902">+9 587 325 902</a></p>
+        </div>
+      </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Offcanvas area start -->
+    <div class="offcanvas__area">
+      <div class="offcanvas__body">
+        <div class="offcanvas__left">
+          <div class="offcanvas__logo">
+            <a href="index.html"
+              ><img src="assets/imgs/logo1.png" alt="Offcanvas Logo"
+            /></a>
+          </div>
+          <div class="offcanvas__social">
+            <h3 class="social-title">Follow Us</h3>
+            <ul>
+              <li><a href="https://www.instagram.com/justsabit">Instagram</a></li>
+              <li><a href="facebook.com/itsSABIT">Facebook</a></li>
+              <li><a href="https://x.com/justsabit?s=11">Twitter</a></li>
+              <li><a href="https://www.youtube.com/@justsabit">YouTube</a></li>
+              <li><a href="https://www.tiktok.com/@justsabit_">TikTok</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas__links">
+            <ul>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="portfolio.html">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="offcanvas__mid">
+          <div class="offcanvas__menu-wrapper">
+            <nav class="offcanvas__menu">
+              <ul class="menu-anim">
+                <li><a href="/">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="service.html">services</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">Get Quote</a></li>
+                <li><a href="contact.html">Place your shipment</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="offcanvas__right">
+          <div class="offcanvas__search">
+            <form action="#">
+              <input type="text" name="search" placeholder="Search keyword" />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+          <div class="offcanvas__contact">
+            <h3>Get in touch</h3>
+            <ul>
+              <li><a href="tel:02094980547">+(02) - 094 980 547</a></li>
+              <li>
+                <a href="mailto:info@extradesign.com">info@extradesign.com</a>
+              </li>
+              <li>230 Norman Street New York, QC (USA) H8R 1A1</li>
+            </ul>
+          </div>
+          <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1" />
+          <img src="assets/imgs/shape/12.png" alt="shape" class="shape-2" />
+        </div>
+        <div class="offcanvas__close">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Offcanvas area end -->
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- Hero area start -->
+          <section class="hero__about">
+            <div class="container g-0 line">
+              <span class="line-3"></span>
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="hero__about-content">
+                    <h1 class="hero-title animation__word_come">
+                      Fixing Freight Forwarding with Clarity, Care, and a Human
+                      Touch
+                    </h1>
+                    <div class="hero__about-info">
+                      <div class="hero__about-btn">
+                        <div class="btn_wrapper">
+                          <a
+                            href="service.html"
+                            class="wc-btn-primary btn-hover btn-item"
+                            ><span></span> Trends & <br />
+                            technology
+                            <i class="fa-solid fa-arrow-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                      <div class="hero__about-text title-anim">
+                        <p>
+                          Shipping shouldn’t be a gamble. At SABIT, we simplify
+                          logistics with reliability, transparency, and
+                          personalized support you can count on—no matter where
+                          or what you ship.
+                        </p>
+                      </div>
+                      <div class="hero__about-award">
+                        <img
+                          src="assets/imgs/about/award.png"
+                          alt="Best Studio Award"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row hero__about-row">
+                <div class="col-xxl-12">
+                  <div class="hero__about-video">
+                    <video loop muted autoplay playsinline>
+                      <source src="assets/video/video.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero area end -->
+
+          <!-- Story area start -->
+          <section class="story__area">
+            <div class="container g-0 line pt-140">
+              <span class="line-3"></span>
+              <div class="sec-title-wrapper">
+                <div class="from-text">from <span>1990</span></div>
+
+                <div class="row">
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                    <h2 class="sec-sub-title title-anim">Just Sabit</h2>
+                    <h3 class="sec-title title-anim">About us</h3>
+                  </div>
+                  <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                    <div class="story__text my-0 mt-0">
+                      <p>
+                        SABIT was built to solve a frustrating truth: Most suppliers, freight forwarders or shippers overpromise, underdeliver, and vanish when things go wrong.
+                      </p>
+                      <h5 class="text-white mt-4 ">We do it differently.</h5>
+                      <p>SABIT is your trust logistics advisor – a boutique, high-touch freight support platform that equips you with confidence, full visibility, and control at every step of your supply chain. </p>
+                      <h5 class="text-white mt-4">We don’t just “book shipments.”</h5>
+                      <p>We work with a curated network of vetted agents worldwide to ensure nothing falls through the cracks – from pickup to final delivery.  </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                    <h2 class="sec-sub-title title-anim">What Makes</h2>
+                    <h3 class="sec-title title-anim">SABIT Different?</h3>
+                  </div>
+                  <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                    <div class="story__text">
+                      <p>
+                        Boutique Touch: You’re not another number, or another
+                        shipment. We reply fast, rely fast. We stay on top of
+                        updates and give proactive support and solutions – just
+                        how you expect.
+                      </p>
+                      <p>
+                        Global Reach, Local Care: We operate through vetted
+                        agents in China, USA, Europe, and GCC, managing customs,
+                        ports, and transportation – while you just dela with one
+                        expert point of contact.
+                      </p>
+                      <p>
+                        High Standard Clients, High Quality Results: We work
+                        with diplomats, luxury car owners, project managers,
+                        E-commerce brands, beauty brands, and companies who
+                        value service over shortcuts.
+                      </p>
+                      <p>
+                        No Guesswork: We guide you every step of the way, with
+                        clear answers, strategic oversight, and hands-on
+                        coordination.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                    <h2 class="sec-sub-title title-anim">Why </h2>
+                    <h3 class="sec-title title-anim">SABIT Exists</h3>
+                  </div>
+                  <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                    <div class="story__text">
+                      <p>
+                        Our founder created SABIT after seeing the complexities around shipments being delayed, mishandled, and just how much stress clients were coping with from such poor quality standards. We knew it was time to fix freight forwarding for clients who genuinely deserve more. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                  <div class="story__img-wrapper">
+                    <img
+                      src="assets/imgs/story/1.jpg"
+                      alt="Story Thumbnail"
+                      class="w-100"
+                    />
+                  </div>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                  <div class="story__img-wrapper img-anim">
+                    <img
+                      src="assets/imgs/story/2.jpg"
+                      alt="Story Thumbnail"
+                      data-speed="auto"
+                    />
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                  <div class="story__img-wrapper">
+                    <img src="assets/imgs/story/3.jpg" alt="Story Thumbnail" />
+                    <img src="assets/imgs/story/4.jpg" alt="Story Thumbnail" />
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </section>
+          <!-- Story area end -->
+
+        <!-- Counter area start -->
+        <section class="counter__area">
+          <div class="container g-0 line pt-150">
+            <span class="line-3"></span>
+
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="counter__wrapper counter_animation">
+                  <div class="counter__item counter__anim">
+                    <h2 class="counter__number">234+</h2>
+                    <p>Happy  <br>Customers</p>
+                    <span class="counter__border"></span>
+                  </div>
+                  <div class="counter__item counter__anim">
+                    <h2 class="counter__number">40+</h2>
+                    <p>Years of  <br>Experience</p>
+                    <span class="counter__border"></span>
+                  </div>
+                  <div class="counter__item counter__anim">
+                    <h2 class="counter__number">72%</h2>
+                    <p>Switch-Over <br>To Our Services</p>
+                    <span class="counter__border"></span>
+                  </div>
+                  <div class="counter__item counter__anim">
+                    <h2 class="counter__number">98%</h2>
+                    <p>Customer <br>Satisfaction Rate</p>
+                    <span class="counter__border"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Counter area end -->
+
+        <!-- Workflow area start -->
+        <section class="workflow__area">
+          <div class="container g-0 line pt-140 pb-140">
+            <div class="line-3"></div>
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="sec-title-wrapper">
+                  <h2 class="sec-sub-title title-anim">Workflow</h2>
+                  <h3 class="sec-title title-anim">How we work</h3>
+                </div>
+              </div>
+
+              <div class="col-xxl-12">
+                <div class="swiper workflow__slider ">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide workflow__slide fade_left">
+                      <h4 class="workflow__step">step 01</h4>
+                      <h5 class="workflow__number">01</h5>
+                      <h6 class="workflow__title">Audience</h6>
+                      <p>Having these the marketplace to your business</p>
+                    </div>
+
+                    <div class="swiper-slide workflow__slide fade_left">
+                      <h4 class="workflow__step">step 02</h4>
+                      <h5 class="workflow__number">02</h5>
+                      <h6 class="workflow__title">Plan & Sketch</h6>
+                      <p>Delicate and long-lasting with vitamins and nutritions</p>
+                    </div>
+
+                    <div class="swiper-slide workflow__slide fade_left">
+                      <h4 class="workflow__step">step 03</h4>
+                      <h5 class="workflow__number">03</h5>
+                      <h6 class="workflow__title">Customize</h6>
+                      <p>Creating brand identities for the digital experiences</p>
+                    </div>
+
+                    <div class="swiper-slide workflow__slide fade_left">
+                      <h4 class="workflow__step">step 04</h4>
+                      <h5 class="workflow__number">04</h5>
+                      <h6 class="workflow__title">User Testing</h6>
+                      <p>We look forward to engage with beyond the conventional</p>
+                    </div>
+
+                    <div class="swiper-slide workflow__slide fade_left">
+                      <h4 class="workflow__step">step 05</h4>
+                      <h5 class="workflow__number">05</h5>
+                      <h6 class="workflow__title">User Testing</h6>
+                      <p>We look forward to engage with beyond the conventional</p>
+                    </div>
+
+                    <div class="swiper-slide workflow__slide fade_left">
+                      <h4 class="workflow__step">step 06</h4>
+                      <h5 class="workflow__number">06</h5>
+                      <h6 class="workflow__title">User Testing</h6>
+                      <p>We look forward to engage with beyond the conventional</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Workflow area end -->
+
+          <!-- Brand area start -->
+          <section class="brand__area">
+            <div class="container g-0 line pt-140 pb-140">
+              <span class="line-3"></span>
+              <div class="row g-0">
+                <div class="col-xxl-12">
+                  <div class="sec-title-wrapper">
+                    <h2 class="sec-sub-title title-anim">Internation Brands</h2>
+                    <h3 class="sec-title title-anim">
+                      We are happy to work with global <br />
+                      largest brands
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="brand__list">
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/1.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/2.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/3.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/4.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/5.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/6.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/3.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/4.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/5.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/6.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/1.png" alt="Brand Logo" />
+                  </div>
+                  <div class="brand__item fade_bottom">
+                    <img src="assets/imgs/brand/2.png" alt="Brand Logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Brand area end -->
+
+          <!-- Testimonial area start -->
+          <section class="testimonial__area-2">
+            <div class="container g-0 line pb-140">
+              <span class="line-3"></span>
+
+              <div class="row g-0">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                  <div class="testimonial__video">
+                    <video autoplay muted loop>
+                      <source
+                        src="assets/video/testimonial.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                  <div class="testimonial__slider-wrapper-2">
+                    <div class="swiper testimonial__slider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Construction Project Support 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              We had time-sensitive shipments heading to our site outside Riyadh. SABIT matched us with a reliable agent and stayed in the loop the entire time. We didn’t need to chase updates — they were already two steps ahead.
+                            </p>
+                            <h3 class="testimonial__author">KSA Vision 2030</h3>
+                            <h4 class="testimonial__role">— Project Director, Construction Sector (KSA)</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Cold Chain F&B Logistics 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              We move premium food products into Saudi Arabia and temperature control is non-negotiable. SABIT helped us plan around the climate and introduced us to a cold chain partner who delivered with zero temp deviations.
+                            </p>
+                            <h3 class="testimonial__author">Germany > KSA</h3>
+                            <h4 class="testimonial__role">— Supply Chain Manager, Gourmet Exports (Germany)</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Luxury Furniture Shipment 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              In the past, we dealt with rust and moisture damage during long-haul moves. SABIT not only helped us prep the shipment properly, they also connected us with an agent who actually followed those recommendations. Every piece arrived in perfect condition.
+                            </p>
+                            <h3 class="testimonial__author">UAE Residential Project</h3>
+                            <h4 class="testimonial__role">— Procurement Lead, Private Villas Contractor (UAE)</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Diplomatic Car Shipping
+                            </h2>
+                            <p class="testimonial__text-2">
+                              We were there right at the beginning just when the
+                              concept for search engine optimisation taking
+                              office and the full of internet. So wewe’ve grown
+                              to employ than 50 talented specialists with
+                              diverse experiences and broad skill sets of huge
+                              markers.
+                            </p>
+                            <h3 class="testimonial__author">Gulf Style</h3>
+                            <h4 class="testimonial__role">— Diplomatic Affairs Contact, GCC Region</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Pharmaceutical Compliance Freight 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              The SABIT team took our compliance concerns seriously. They recommended a certified partner who understood pharma documentation inside out. We didn’t have to babysit the process — which says a lot in this industry.
+                            </p>
+                            <h3 class="testimonial__author">France</h3>
+                            <h4 class="testimonial__role">— Logistics Manager, Healthcare Distribution (France)</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Hospitality Site Logistics 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              Coordinating delivery phases to a hotel construction site is a juggling act. SABIT helped us plan it in waves, align it with our contractors, and brought in a logistics team that understood both Saudi customs and EU standards.
+                            </p>
+                            <h3 class="testimonial__author">Italy > Saudi Project</h3>
+                            <h4 class="testimonial__role">— Procurement Coordinator, Hospitality Group (Europe–KSA)</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Diplomatic / Government Vehicle Freight 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              Thanks to SABIT, we were able to move a government vehicle with full compliance and minimal downtime. The agent they referred was experienced with sensitive freight, and SABIT stayed involved until it was signed off and cleared.
+                            </p>
+                            <h3 class="testimonial__author">Africa > GCC</h3>
+                            <h4 class="testimonial__role">— Senior Administrator, North African Embassy</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Car Shipping for HNWI 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              The process was incredibly smooth. SABIT helped prep the paperwork, advised on shipping methods, and introduced me to a trusted shipper. My vehicle arrived early and in perfect condition. You don’t get that kind of service often.
+                            </p>
+                            <h3 class="testimonial__author">UK > KSA</h3>
+                            <h4 class="testimonial__role">— Private Collector, UK–Saudi Corridor</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              Urgent Medical Supplies Freight 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              We had to move critical medical equipment into the Gulf on short notice. SABIT worked fast, lined up a dependable agent, and kept us looped in without overloading us with noise. The shipment cleared quickly and arrived ahead of schedule.
+                            </p>
+                            <h3 class="testimonial__author">Asia > KSA</h3>
+                            <h4 class="testimonial__role">— Regional Medical Ops Lead, Global NGO</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                          <div class="testimonial__inner-2">
+                            <h2 class="testimonial__title-2">
+                              E-Commerce Freight Advisory 
+                            </h2>
+                            <p class="testimonial__text-2">
+                              I run a growing e-commerce store, and SABIT helped me break the cycle of unreliable shipping. They referred me to a partner who understands my business, and since then, things just run better — less back and forth, faster turnarounds, no hidden surprises.
+                            </p>
+                            <h3 class="testimonial__author">SME Brand</h3>
+                            <h4 class="testimonial__role">— Founder, Online Retail Brand</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="testimonial__pagination">
+                      <div class="prev-button">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                      <div class="next-button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Testimonial area end -->
+
+          <!-- CTA area start -->
+          <section class="cta__area">
+            <div class="container line pb-110 dark-p">
+              <div class="line-3"></div>
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="cta__content">
+                    <p class="cta__sub-title">Work with us</p>
+                    <h2 class="cta__title title-anim">
+                      We would love to hear more about your project
+                    </h2>
+                    <div class="btn_wrapper">
+                      <a
+                        href="contact.html"
+                        class="wc-btn-primary btn-hover btn-item"
+                        ><span></span>Let’s talk us
+                        <i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- CTA area end -->
+        </main>
+
+        <!-- Footer area start -->
+        <footer class="footer__area">
+          <div class="footer__top">
+            <div class="container footer-line"></div>
+            <img
+              src="assets/images/footer/3.png"
+              alt="Footer Image"
+              data-speed="0.5"
+            />
+          </div>
+          <div class="footer__btm">
+            <div class="container">
+              <div class="row footer__row">
+                <div class="col-xxl-12">
+                  <div class="footer__inner">
+                    <div class="footer__widget">
+                      <img
+                        class="footer__logo"
+                        src="assets/imgs/logo1.png"
+                        alt="Footer Logo"
+                      />
+                      <p>
+                        When do they work well, and when do they on us and
+                        finally, when do we actually need how can we avoid them.
+                      </p>
+                      <ul class="footer__social">
+                        <li>
+                          <a href="https://x.com/justsabit?s=11"
+                            ><span><i class="fa-brands fa-twitter"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><i class="fa-brands fa-linkedin"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/@justsabit"
+                            ><span><i class="fa-brands fa-youtube"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/justsabit"
+                            ><span><i class="fa-brands fa-instagram"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="facebook.com/itsSABIT"
+                            ><span><i class="fa-brands fa-facebook-f"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.tiktok.com/@justsabit_"
+                            ><span><i class="fa-brands fa-tiktok"></i></span
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="footer__widget-2">
+                      <h2 class="footer__widget-title">Information</h2>
+                      <ul class="footer__link">
+                        <li><a href="about.html">About Company</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">Plan Your Shipment</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="footer__widget-3">
+                      <h2 class="footer__widget-title">Contact Us</h2>
+                      <ul class="footer__contact">
+                        <li>
+                          <a href="tel:02574328301" class="phone"
+                            >+092 123456789
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mailto:info@justsabit.com"
+                            >info@justsabit.com</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="footer__widget-4">
+                      <h2 class="project-title">
+                        Have a project in your mind?
+                      </h2>
+                      <div class="btn_wrapper">
+                        <a
+                          href="contact.html"
+                          class="wc-btn-primary btn-hover btn-item"
+                          ><span></span> contact us
+                          <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                      <h3 class="contact-time">09 : 00 AM - 10 : 30 PM</h3>
+                      <h4 class="contact-day">Saturday - Thursday</h4>
+                    </div>
+
+                    <div class="footer__copyright">
+                      <p>
+                        © 2010 - 2025 | Alrights reserved by
+                        <a href="/" target="_blank"
+                          >Sabit</a
+                        >
+                      </p>
+                    </div>
+
+                    <div class="footer__subscribe">
+                      <form action="#">
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Enter your email"
+                        />
+                        <button type="submit" class="subs-btn">
+                          <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer area end -->
+      </div>
+    </div>
+
+    <!-- All JS files -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+  <!-- Mirrored from wealcoder.com/dev/html/axtra/about-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 May 2025 20:05:14 GMT -->
+</html>
